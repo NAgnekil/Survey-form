@@ -1,0 +1,163 @@
+:root {
+  --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+}
+
+body {
+  background-size: cover;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  color: whitesmoke;
+  ::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue-alpha);
+    background-image: linear-gradient(
+        115deg,
+        rgba(158, 148, 58, 0.6),
+        rgba(206, 198, 136, 0.5)
+      ),
+      url(green-woman-energy-department-interior.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+header,
+main {
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header {
+  text-align: center;
+  margin: 2rem 0 0.5rem 0;
+  h1 {
+    margin: 0;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  }
+  p {
+    margin-top: 0.8rem;
+    font-size: 1.3rem;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  }
+}
+main {
+  margin-bottom: 2rem;
+}
+
+form {
+  padding: 2.5rem;
+  background-color: var(--color-darkblue-alpha);
+  border-radius: 10px;
+  width: 100%;
+  fieldset {
+    border: none;
+  }
+  label,
+  p {
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+  }
+  .personal-info {
+    display: flex;
+    flex-direction: column;
+  }
+  .input-field,
+  select {
+    height: 2rem;
+    padding: 0.3rem 0.75rem;
+    color: #495057;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    margin-bottom: 1.25rem;
+  }
+  .food-quality {
+    margin-bottom: 1.25rem;
+    label {
+      font-size: 1rem;
+    }
+    input {
+      margin-bottom: 0.5rem;
+    }
+  }
+  .dropdown {
+    display: flex;
+    flex-direction: column;
+  }
+  .likes-and-dislikes {
+    margin-bottom: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    p {
+      font-size: 0.8rem;
+    }
+    label {
+      font-size: 1rem;
+    }
+    input {
+      margin-bottom: 0.5rem;
+    }
+  }
+  .comments {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    #comments {
+      min-height: 120px;
+      padding: 0.75rem;
+      color: #495057;
+      border: 1px solid #ced4da;
+      border-radius: 0.25rem;
+      font-size: 1rem;
+      resize: vertical;
+      overflow-wrap: break-word;
+      white-space: pre-wrap;
+    }
+  }
+  button {
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 1rem;
+    background-color: rgba(206, 198, 136);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+    transition: 0.75s;
+
+    &:hover,
+    &:focus {
+      border-color: #e4cb58;
+      color: #fff;
+    }
+  }
+  button:hover,
+  button:focus {
+    box-shadow: inset 30em 0 0 0 #e4cb58;
+  }
+}
+
+/* input:valid {
+  background-color: palegreen;
+}
+
+input:invalid {
+  background-color: lightpink;
+} */
