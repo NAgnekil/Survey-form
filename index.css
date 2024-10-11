@@ -138,19 +138,13 @@ form {
     border: none;
     border-radius: 5px;
     padding: 1rem;
-    background-color: rgba(206, 198, 136);
+    background-color: #cec688;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
-    transition: 0.75s;
-
-    &:hover,
-    &:focus {
-      border-color: #e4cb58;
-      color: #fff;
+    transition: 0.5s ease-in-out;
+    &:hover {
+      box-shadow: 0px 0px 0px 2.5px var(--color-darkblue-alpha) inset,
+        0px 0px 0px 5px #cec688;
     }
-  }
-  button:hover,
-  button:focus {
-    box-shadow: inset 30em 0 0 0 #e4cb58;
   }
 }
 
